@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+   
+    <link rel="stylesheet" href="css/ionicons.min.css"> 
+    <link rel="stylesheet" href="https://imgur.com/a/bH53XUR">
+    <title>portfolio</title>
+    <style>
+      
+      body {
+          margin: 0px;
+        }
+        /*-------------------------------navigation section-----------------------------------*/
+        nav {
+            background-color: rgba(255,255, 255, 0.9);
+            background-color: lightblue;
+        }
+        nav:after {
+          content: '';
+          display: block;
+          clear:both;
+        }
+
+        .menu ul{
+            list-style:none;
+            padding-left:0px;
+            margin:0px;
+        }
+        .menu ul li {
+            display:inline-block;
+            margin-right:20px
+        }
+        .logo, .menu{
+            display: inline-block;
+        }
+        .menu {
+            float:right;
+            margin:0;
+            margin-top: 16px;
+            margin-right: 30px;
+
+
+        }
+        #about a,
+        #My-skills a,
+        #my-projects a {
+          text-decoration: none;
+          color: white;
+        }
+        .menu ul li a {
+            text-decoration:none;
+            padding:20px 10px;
+        }
+        .menu ul li a:hover{
+            background-color: greenyellow;
+            color:white;
+            transition: all 0.5s ease;
+        }
+        .logo{
+          float: left;
+          margin:16px 0 16px 50px;
+          color: #333;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+        /*----------------------------------------------------HEADER SECTION---------------------------------------------*/
+        header {
+          background-image: url(https://imgur.com/13NbU3M.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          height:500px;
+          background-attachment: fixed;
+        }
+        header p{
+          margin: 0;
+        }
+        .hero-container{
+          text-align: center;
+          padding-top: 100px;
+        }
+        .btn-work, .btn-CONTACT{
+          display: inline-block;
+          padding: 10px 25px;
+          font-weight: bold;
+          border-radius: 20px;
+          text-decoration: none;
+        }
+        .btn-work {
+          background-color: #85af4b;
+          color: white;
+          margin: 15px 10px;
+          border: 2px solid #85af4b;
+
+        }
+        .btn-CONTACT {
+          background-color: white;
+          color: #85af4b;
+          border: 2px solid white;
+        }
+        .btn-work:hover {
+          background-color:white;
+          color: #85af4b;
+          transition: all 0.8s ease;
+        }
+        .btn-CONTACT:hover {
+          background-color: #85af4b;
+          color: white;
+          transition: all 0.5s ease;
+        }
+        /*-------------------------------------------------ABOUT ME SECTION--------------------------------------------*/
+        .about-me {
+          width: 100%;
+          padding-top: 70px;
+          padding-bottom: 70px;
+        }
+        .about-me:after {
+          content:'';
+          display: block;
+          clear: both;
+        }
+        .about-me h2{
+          color: #333;
+          text-align: center;
+          position: relative;
+        }
+        .about-me h2:after {
+          content: '';
+          position: absolute;
+          width: 80px;
+          height: 2px;
+          margin-left: -40px;
+          left: 50%;
+          bottom: 0%;
+          background-color: #85af4b;
+        }
+        .about-me .col-left{
+          width:50%;
+          float: left;
+        }
+        .about-me .col-left {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+        .about-me .col-left img {
+          max-width:100%;
+
+        }
+        .about-me .col-right a {
+          background-color: #85af4b;
+          padding: 10px 25px;
+          border-radius: 20px;
+          text-decoration: none;
+          color: white;
+          font-size: 17px;
+          display: inline-block;
+        }
+        .about-me .col-right  h4,p {
+            font-size: 20px;
+        }
+        /*------------------------------------------------------MY SKILLS SECTION----------------------------*/
+        .My-skills {
+            background-color: #e2e2e2;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .My-skills:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .My-skills h2 {
+          text-transform: uppercase;
+          position: relative;
+        }
+        .My-skills h2:after {
+          content: '';
+          position: absolute;
+          width: 80px;
+          height: 2px;
+          margin-left: -40px;
+          left: 50%;
+          bottom: 0%;
+          background-color: #85af4b;
+        }
+        .My-skills .skills-left, 
+        .My-skills .skills-center, 
+        .My-skills .skills-right {
+            width: 30%;
+            display: inline-block;
+            float: left;
+            padding-left: 1.5%;
+            padding-right: 1.5%;
+
+        
+    }
+        .My-skills i {
+            color: #85af4b;
+            font-size: 60px;
+        }
+        /*----------------------------------------------------MY PROJECT SECTION----------------------------------*/
+        .my-project {
+            background-color: #fff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            padding-bottom: 350px;
+        }
+        .my-project :after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .my-project h2 {
+          position: relative;
+            margin-top: 0px;
+            text-align: center;
+        }
+        .my-project h2:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            margin-left: -50px;
+            left: 50%;
+            bottom: 0%;
+            background-color: #85af4b;
+        }
+        .my-project .project1,
+        .my-project .project2,
+        .my-project .project3 {
+            height: 300px;
+            width: 30%;
+            float: left;
+            background-color: red;
+            position: relative;
+            overflow: hidden;
+        }
+        .my-project .project1 {
+            margin-left: 2%;
+            margin-right: 1.5%;
+            background-image: url(https://imgur.com/3ozHjJf.jpg);
+            background-size: cover;
+        }
+        
+        .my-project .project2 {
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            background-image: url(https://imgur.com/DBrkteg.jpg);
+            background-size: cover;
+        }
+        
+        .my-project .project3 {
+            margin-left: 1.5%;
+            margin-right: 2%;
+            background-image: url(https://imgur.com/VPnYihr.jpg);
+            background-size: cover;
+        }
+        .my-project .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding-top: 310px;
+        }
+        .my-project .overlay:hover {
+            background-color: rgba(0,0,0,0.6);
+            padding-top: 130px;
+            transition: all 1s ease;
+        }
+        .overlay a {
+            display: inline-block;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+         /*----------------------------------------------------CONTACT ME SECTION----------------------------------*/
+
+         .contact-section {
+           padding-top: 50px;;
+           padding-bottom: 50px;
+           display: block;
+           text-align: center;
+          background-color: #e2e2e2;
+
+         }
+         .contact-section:after {
+           content: '';
+           display: block;
+           clear: both;
+         }
+         .contact-section h2 {
+          position: relative;
+            margin-top: 0px;
+            text-align: center;
+        }
+        .contact-section h2:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            margin-left: -50px;
+            left: 50%;
+            bottom: 0%;
+            background-color: #85af4b;
+        }
+         .social-container {
+           width: 80%;
+           margin: 0 auto;
+           text-align: left;
+         }
+         .col-1,
+         .col-2,
+         .col-3 {
+           width: 33.3333333333%;
+           display: inline-block;
+           float: left;
+         }
+         .social-container i {
+           float: left;
+           margin-top: 17px;
+           font-size: 24px;
+           margin-right: 20px;
+           color: #85af4b;
+         }
+         .col-1 p,
+         .col-2 p,
+         .col-3 p {
+            display: inline-block;
+         }
+         .col-3 p {
+           margin-top: 7px;
+           margin-bottom: 0;
+         }
+         .text-bold {
+           color: #333;
+           font-weight: bold;
+         }
+         .col-1 a,
+         .col-2 a,
+         .col-3 a {
+           text-transform: none;
+         }
+          /*---------------------------------------------------FOOTER SECTION----------------------------------*/
+         footer {
+           height: 15vh;
+           background-color: #777777;
+           color: #333333;
+           padding: 20px 40px;
+         }
+         footer:after {
+           content: '';
+           display: block;
+           clear: both;
+         }
+         .footer-text {
+           float: left;
+         }
+         .footer-text i {
+           color:white;
+         }
+         .social {
+           float: right;
+           margin-top: 15px;
+         }
+         .social i {
+           font-size: 25px;
+           padding: 10px 10px;
+         }
+         .social a:visited {
+           color: #333;
+         }
+         .social a i:hover {
+            color:white;
+            background-color: #333;
+            transition: all 0.5s ease;
+         }
+         .footer-text p {
+           margin-top: 0px;
+           margin-bottom: 0px;
+         }
+  
+    </style>
+    
+</head>
+<body>
+    <!----------------------------------------------NAVIGATION BAR SECTION------------------------------------------->
+    <nav>
+    <div class="logo">LAVISH GARG</div>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">Home </a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#My-skills">Skills</a>
+            </li>
+            <li>
+                <a href="#my-project">Work</a>
+            </li>
+            <li>
+                <a href="#contact-section">Contact</a>
+           </li>
+        </ul>
+    </div>
+  </nav>
+  <!-------------------------------------------HEADER SECTION------------------------------------------------------------------>
+  <header>
+      <div class="hero-container">
+          <p>Hello, My name is Lavish garg.</p>
+          <h1>Nitian,Btech Student From Nit Jalandhar</h1>
+          <a href="#" class="btn-work">VIEW WORK</a>
+          <a href="#" class="btn-CONTACT">CONTACT ME</a>
+      </div>
+  </header>
+  <!----------------------------------------------------------ABOUT ME SECTION---------------------------------------------------------->
+  <div class="about-me" id="about">
+    <h2>ABOUT ME</h2>
+    <div class="col-left">
+      <img src="https://imgur.com/9RCN4xQ.jpg" alt="lavish garg">
+    </div>
+    <div class="col-right">
+      <h4>LAVISH GARG</h4>
+      <p>Hi. I'm lavish garg ,Btech student from Nit Jalandhar.I am a full-stack web developper.I need a job regarding web development.</p>
+      <p>I completed my Btech degree in 2023 with cgpa of 8.7. I have two year working experience regarding web development job.</p>
+      <a href="#">HIRE ME NOW</a>
+    </div>
+  </div>
+  <!----------------------------------------------------------MY SKILLS SECTION------------------------------------------------------------>
+  <div class="My-skills" id="My-skills">
+      <h2>My Skills</h2>
+    <div class="skills-left">
+            <i class="ion-android-phone-portrait"></i>
+            <h3>RESPONSIVE WEB DESIGNS</h3>
+            <p>I am a responsive web designer. I have a lot of experience related to wed development course and made very good projects.I have two year working experience regarding web development job.</p>
+    </div>
+
+    <div class="skills-center">
+            <i class="ion-social-angular-outline"></i>
+            <h3>JAVASCRIPT/jsQuery</h3>
+            <p>I also learnt Javascript languade along with jQuery which is necessary for web development course.I have two year working experience regarding web development job.</p>
+     </div>
+
+    <div class="skills-right">
+            <i class="ion-social-wordpress"></i>
+            <h3>DATA STRUCTURE AND ALGORITHMS</h3>
+            <p>Along with that I have keen interest in Data structure and algorithms. I have done a lot of programs in it.I have two year working experience regarding web development job.</p>
+    </div>
+
+  </div>
+  <!---------------------------------------------------------MY PROJECT SECTION---------------------------------------------------->
+  <section class="my-project" id="my-project"> 
+    <h2>MY PROJECTS</h2>
+    <div class="project1">
+          <div class="overlay">
+              <a href="#">VIEW PROJECT</a>
+          </div>
+    </div>
+    <div class="project2">
+          <div class="overlay">
+            <a href="#">VIEW PROJECT</a>
+          </div>
+    </div>
+    <div class="project3">
+         <div class="overlay">
+          <a href="#">VIEW PROJECT</a>
+         </div>
+    </div>
+  </section>
+  <!---------------------------------------------------------CONTACT SECTION---------------------------------------------------->
+  
+  
+  <div class="contact-section" id="contact-section">
+    <h2>CONTACT ME</h2>
+    <div class="social-container">
+        <p>Get in touch with me, or Follow me on:</p>
+        <div class="col-1">
+          <div class="line1">
+                 <i class="ion-social-twitter"></i>
+                  <p>
+                       <span class="text-bold">Twitter:</span> <br />
+                       <a href="#">@Lgarg2711</a>
+                  </p>
+          </div>
+          <div class="line1">
+                <i class="ion-social-instagram"></i>
+                  <p>
+                    <span class="text-bold">Instagram:</span> <br />
+                    <a href="https://www.instagram.com/lavish.garg.927">@lavish.garg.927</a>
+                  </p>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="line1">
+                <i class="ion-social-facebook"></i>
+                <p>
+                  <span class="text-bold">Facebook:</span> <br />
+                  <a href="https://www.facebook.com/lavish.garg.927">@lavishgarg</a>
+                </p>
+          </div>
+          <div class="line2">
+                <i class="ion-social-linkedin"></i>
+                <p>
+                  <span class="text-bold">Linkedin:</span> <br />
+                    <a href="https://www.linkedin.com/in/lavish-garg-b96796197">@lavishgarg123</a>
+                </p>
+          </div>
+        </div>
+        <div class="col-3">
+          <p>3511,kalkatta street</p>
+          <p>Nai basti,Bathinda</p>
+          <p>Phone number:7696637170</p>
+          <p>Email:</p>
+          <p>lavishgarg2001@gmail.com</p>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-text">
+        <p>&copy;2020, All Rights Reserved, Developed By Lavish Garg <br />
+          Made with <i class="ion-ios-heart"></i> in Punjab,India.
+        </p>
+    </div>
+        <div class="social">
+          <a href="#"><i class="ion-social-twitter"></i></a>
+          <a href="https://www.instagram.com/lavish.garg.927"><i class="ion-social-instagram"></i></a>
+          <a href="https://www.facebook.com/lavish.garg.927"><i class="ion-social-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/lavish-garg-b96796197"><i class="ion-social-linkedin"></i></a>
+        </div>
+  </footer>
+</body>
+
+
+</html>
